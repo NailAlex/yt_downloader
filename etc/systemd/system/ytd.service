@@ -1,0 +1,13 @@
+[Unit]
+Description=Youtube Downloader Bot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/yt_downloader/yt_downloader_tg3.py
+WorkingDirectory=/opt/yt_downloader
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=sysinit.target
